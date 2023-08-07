@@ -86,14 +86,6 @@ public class Assignment3 {
             System.out.println("---------------------------------------");
             System.out.println();
 
-            // String blueBold = "\033[34;1m";
-            // String blue = "\033[34m";
-            // String greenBold = "\033[32;1m";
-            // String green = "\033[32m";
-            // String yellowBold = "\033[33;1m";
-            // String yellow = "\033[33m";
-            // String redBold = "\033[31;1m";
-            // String whiteNotBold = "\033[30;0m";
 
             double total = marks1 + marks2 + marks3;
             double average = total/3;
@@ -116,7 +108,7 @@ public class Assignment3 {
             System.out.printf("Name : %s%s%s \n","\033[34;1m",name.toUpperCase(),"\033[30;0m");
             System.out.printf("Age : %s years old \n",age);
             System.out.printf("Status : %s \n",status);
-            System.out.printf("Total : %.2f     Avg : %.2f \n", total,average);
+            System.out.printf("Total : %.2f     Avg : %.2f%s \n", total,average,"%");
             System.out.println();
             System.out.printf("+%s+%2$s+%2$s+ \n", "-".repeat(10),"-".repeat(8));
             System.out.printf("|%-10s|%8s|%8s| \n", "Subject", "Marks", "Status");
